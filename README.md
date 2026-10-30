@@ -83,7 +83,9 @@ hydra -l admin -p teste123 192.168.56.101 http-get-form "/dvwa/vulnerabilities/b
 
 **Resultado:** Acesso obtido com usuário: `admin` | Senha: `password`  
 
-Evidência:
+Evidência:  
+
+![DVWA Sucesso](./evidencias/dvwa/dvwa7.png) 
 
 ## Cenário 3 — Serviço SMB
 
@@ -105,9 +107,9 @@ hydra -l msfadmin -P smb_pass.txt 192.168.56.101 smb -vV
 
 **Resultado:** Acesso obtido com usuário: `msfadmin` | Senha: `msfadmin`  
 
-Evidência:
+Evidência:  
 
-
+![SMB Sucesso](./evidencias/smb/smb2.png) 
 
 ## Todos os serviços testados apresentaram-se vulneráveis a ataques de força bruta pelos seguintes fatores combinados:  
 Uso de credenciais padrão — contas e senhas de fábrica não foram alteradas  
