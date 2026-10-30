@@ -15,13 +15,14 @@ Interface: eth0
 IP: 192.168.56.102  
 Máscara: 255.255.255.0  
 
-
 **Máquina Alvo (Metasploitable 2):**
 ifconfig  
 Interface: eth0  
 IP: 192.168.56.101  
 Máscara: 255.255.255.0  
-Evidência:
+Evidência:  
+
+![IFCONFIG](./evidencias/outros/ip%20detect.png) 
 
 **Teste de Conectividade — PING**
 
@@ -29,11 +30,15 @@ Confirmou-se que a comunicação entre as máquinas está ativa e estável:
 ping -c 3 192.168.56.101  
 Evidência:  
 
+![PING](./evidencias/outros/ping%20test.png) 
+
 **Varredura de Portas e Serviços — Nmap**
 
 Identificação dos serviços expostos no alvo:  
 sudo nmap -sV 192.168.56.101  
-Evidência:
+Evidência:  
+
+![NMAP](./evidencias/outros/port%20detect.png) 
 
 **Detalhamento dos Cenários**
 
